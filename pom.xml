@@ -137,7 +137,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://github.com/konoha588/sample-app/</url>
+			<url>https://maven.pkg.github.com/konoha588/sample-app/</url>
 		</repository>
 	</distributionManagement>
 </project>
