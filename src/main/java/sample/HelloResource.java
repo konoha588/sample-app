@@ -6,12 +6,18 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
+
 @ApplicationScoped
 @Path("hello")
 public class HelloResource {
+
+    @Inject
+    @ConfigProperty(name = "config.val")
+    private String configValue;
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello"; // TODO テストが通るように実装する
+        return configValue;
     }
 }
