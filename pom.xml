@@ -140,7 +140,7 @@
 					<registry>ghcr.io</registry>
 					<images>
 						<image>
-							<name>ssi-mz-studygroup/hello-app</name>
+							<name>konoha588/hello-app</name>
 							<build>
 								<tags>
 									<tag>${image.tag}</tag>
